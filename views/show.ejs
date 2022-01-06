@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+    </style>
+    <title>The Library</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="nav-head">The Library</h2>
+        <nav>
+            <ul class="nav-items">
+                <li><a class="nav-link" href="/books/new">Add a New Book</a></li>
+                <li><a class="nav-link" href="/books">Back to Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="show-main">
+        <div class=all-details>
+            <div class="show-details">
+                <div class="sidebar">
+                    <img src="<%=book.img%>" style="height:500px; width:350px;" />
+                </div>
+                <div class="details">
+                    <h2><%=book.title %></h2>
+                    Author: <%= book.author%>
+                    <div class="show-btns">
+                        <a class="show-edit" href="/books/<%=book._id%>/edit">Edit</a>
+                        <form action="/books/<%=book._id%>?_method=DELETE" method="POST">
+                            <input class="delete-btn" type="submit" value="DELETE" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-text">" The more that you read, the more things you will know. The more that you learn, the
+            more places you'll go"</p>
+    </footer>
+</body>
+
+</html>

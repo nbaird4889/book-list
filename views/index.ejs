@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+    </style>     
+    <title>The Library</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="nav-head">The Library</h2>
+        <nav>
+            <ul class="nav-items">
+                <li><a class="nav-link" href="/books/new">Add a New Book</a></li>
+                <li><a class="nav-link" href="/books">Back to Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="index-main">
+        <h1>Our Reading List</h1>
+        <ul class="book-list">
+        <% books.forEach(book=> { %>
+            <li class="book-link">
+                <a href="/books/<%=book._id%>"><img class="book-img" src="<%=book.img%>" style="width:175px;height:300px;"></a>
+            </li>
+            <% }) %>
+        </ul>
+    </main>
+    <footer>
+        <p class="footer-text">" The more that you read, the more things you will know. The more that you learn, the more places you'll go"</p>
+    </footer>
+</body>
+
+</html>

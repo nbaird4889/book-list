@@ -1,0 +1,195 @@
+/* UNIVERSAL STYLES */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+/* Header Styles */
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #121212;
+    padding: 30px;
+    box-shadow: 0px 8px 5px black;
+}
+
+.nav-items {
+    list-style-type: none;
+}
+
+.nav-items li {
+    display: inline-block;
+    margin-right: 50px; 
+    transition: all .2s ease-in-out; 
+}
+
+.nav-items li:hover {
+    transform: scale(1.1); 
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: 'Moon Dance', cursive;
+    text-shadow: 2px 2px #6d031c;
+    letter-spacing: 1px;
+}
+
+
+.nav-head {
+    color: white;
+    margin-left: 60px; 
+    font-family: 'Moon Dance', cursive;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px #6d031c;
+    font-size: 46px;
+}
+
+/* Footer Styles */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #6d031c;
+    padding: 50px;
+    box-shadow: 0px -8px 5px #6d031c;
+}
+
+.footer-text {
+    color: white;
+    font-family: 'Moon Dance', cursive;
+    letter-spacing: 3px; 
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+}
+
+/* INDEX STYLES */
+.index-main {
+    background-image: url("https://i.imgur.com/9VLKzd9.jpg");
+    opacity: 0.85;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    color: white;
+    font-family: 'Moon Dance', cursive;
+    font-size: 70px;
+    text-align: center;
+    padding: 50px 0px; 
+    text-shadow: 2px 2px black;
+}
+
+.book-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    column-gap: 150px;
+    flex-wrap: wrap;
+    margin: 0 150px; 
+}
+
+.book-img {
+    margin-bottom: 80px;
+    box-shadow: 8px 8px 5px black;
+    transition: all .2s ease-in-out; 
+}
+
+.book-img:hover {
+    transform: scale(1.2);
+}
+
+/* SHOW PAGE */
+.show-main {
+    background-image: url("https://i.imgur.com/6BdKAHv.jpg");
+    opacity: 0.85;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.show-details {
+  width: 43vw;
+  height: 32vw;
+  display: flex;
+  margin: auto; 
+  box-shadow: 0px 0px 10px 4px black;
+}
+
+.sidebar {
+  width: 50%;
+  background: #9f8873;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  width: 50%;
+  background: #9f8873;
+  padding: 25px;
+  font-family: 'Moon Dance', cursive;
+  font-size: 30px; 
+  color: white;
+}
+
+.all-details {
+    padding-top: 75px;
+    padding-bottom: 75px; 
+}
+
+.delete-btn {
+    background-color: white;
+    color: #673e37;
+    border: none;
+    padding: 10px;
+    margin: 15px 0; 
+}
+
+.delete-btn:hover {
+    color: white;
+    background-color: #6d031c
+}
+
+.show-edit {
+    text-decoration: none;
+    color: white;
+}
+
+.show-edit:hover {
+    color: #6d031c
+}
+
+.show-btns {
+    display: flex; 
+    column-gap: 30px;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 380px) {
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .nav-items li {
+        float: right;
+        margin-bottom: 5px;
+    }
+    
+    .nav-head {
+        font-size: 18px; 
+        margin-left: 40px;
+    }
+}
